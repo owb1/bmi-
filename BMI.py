@@ -20,11 +20,11 @@ def calculate_bmi():
     bmi = weight/(height)**2
     bmi_thresholds = [18.5, 23, 27.5]
     level_labels = ['Risk of nutritional deficiency','Low Risk','Moderate Risk','High Risk']
-    if height > 250:
+    if height > 2.50:
         st.success('what are you? A giraffe?')
     elif weight > 200:
         st.error('one at a time please')
-    elif height < 100:
+    elif height < 1.00:
         st.error('haha midget')
     elif weight < 5:
         st.error('what animal are you? A cat?')
