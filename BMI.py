@@ -23,11 +23,11 @@ def calculate_bmi():
     if height > 250:
         st.success('what are you? A giraffe?')
     elif weight > 200:
-        st.success('one at a time please')
+        st.error('one at a time please')
     elif height < 100:
-        st.success('haha midget')
+        st.error('haha midget')
     elif weight < 5:
-        st.success('what animal are you? A cat?')
+        st.error('what animal are you? A cat?')
     else:
         if bmi <= bmi_thresholds[0]:
             level = level_labels[0]
